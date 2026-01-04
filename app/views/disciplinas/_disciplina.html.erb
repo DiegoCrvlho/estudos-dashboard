@@ -1,7 +1,9 @@
-<div id="<%= dom_id disciplina %>">
-  <div>
-    <strong>Nome:</strong>
-    <%= disciplina.nome %>
-  </div>
+<tr id="<%= dom_id disciplina %>">
 
-</div>
+  <td><%= disciplina.id %></td>
+  <td><%= disciplina.nome %></td>
+  <td>
+    <%= link_to "Show", disciplina_path(disciplina) %>
+  </td>
+
+</tr>

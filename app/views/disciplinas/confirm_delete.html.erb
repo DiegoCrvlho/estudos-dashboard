@@ -1,0 +1,13 @@
+<h1>Excluir disciplina</h1>
+
+<p>Tem certeza que deseja excluir a disciplina:</p>
+
+<p><strong><%= @disciplina.nome %></strong></p>
+
+<%= button_to "Excluir definitivamente",
+      disciplina_path(@disciplina),
+      method: :delete,
+      data: { turbo_confirm: "Tem certeza?" } %>
+
+<br>
+<%= link_to "Cancelar", disciplinas_path %>

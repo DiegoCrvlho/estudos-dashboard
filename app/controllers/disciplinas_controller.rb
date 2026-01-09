@@ -47,6 +47,10 @@ class DisciplinasController < ApplicationController
     end
   end
 
+  def confirm_delete
+    @disciplina = Disciplina.find(params[:id])
+  end
+
   # DELETE /disciplinas/1 or /disciplinas/1.json
   def destroy
     @disciplina.destroy!
